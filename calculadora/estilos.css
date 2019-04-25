@@ -27,11 +27,10 @@
 
    }
    button {
-       width: 100%;
+       width: 60px;
        height: 70px;
        font-size: 24px;
        background-color: white;
-       border: none;
        cursor: pointer;
        border-radius: 10px;
    }
@@ -48,7 +47,7 @@ button:hover{
        border-radius:12px;
        height: 2em;
        box-shadow: 5px 5px 15px 3px #111;
-       font-family: 'Oxygen';
+       font-family: verdana sans-serif;
 
 
    }
