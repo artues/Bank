@@ -8,7 +8,7 @@
        width: 320px;
        background-color: #307bd4;
        margin: 120px auto;
-       padding: 1px ;
+       padding: 10px ;
        border-radius: 23px;
 
    }
@@ -22,7 +22,7 @@
 
    }
    td {
-       width: 25%;
+       width: 30%;
        border: 9px;
 
    }
@@ -39,7 +39,7 @@ button:hover{
     background: lightseagreen;
 }
    #calcular {
-       height: 70px;
+       height: 80px;
        font-size: 40px;
        vertical-align: bottom;
        text-align: right;
@@ -47,6 +47,8 @@ button:hover{
        background-color: #ececec;
        border-radius:12px;
        height: 2em;
+       box-shadow: 5px 5px 15px 3px #111;
+       font-family: 'Oxygen';
 
 
    }
