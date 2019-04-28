@@ -251,13 +251,13 @@ i.fas.fa-calculator {
 .contenedor-slide {
   max-width: 72.4rem;
   position: relative;
-  margin: auto;
+  margin: 0 auto;
 }
 img {
-  height: 620px;
+  height: 550px;
 }
 .numImagen {
-  color: #f2f2f2;
+  color: #373737;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -285,12 +285,67 @@ img {
   background-color: rgba(0,0,0,0.8);
 }
 
-.titulo {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+.titulo h1 {
+  color: #C0B283;
+  top: 22%;
+  font-size: 35px;
   position: absolute;
-  bottom: 8px;
   width: 100%;
   text-align: center;
 }
+#boton {
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  text-decoration: none;
+  border: #373737 1px solid;
+  padding: 8px 12px;
+  border-radius: 10px;
+  top: 55%;
+  left: 45%;
+  color: #C0B283;
+  -webkit-transition: all 0.75s;
+  -moz-transition:    all 0.75s;
+  -ms-transition:     all 0.75s;
+  -o-transition:      all 0.75s;
+  transition:         all 0.75s;
+}
+#boton:hover {
+  background-color: #373737;
+  cursor: pointer;
+}
+.modal {
+  display: none; /* escondido por defecto */
+  position: fixed; /* se queda fijo */
+  z-index: 1; /* aparece delante del texto */
+  padding-top: 300px; /* altura de la caja */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* habilita scroll si fuese necesario */
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.contenido-modal {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 72.4rem;
+  text-align: center;
+}
+.cerrar {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.cerrar:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* CUENTAS */
