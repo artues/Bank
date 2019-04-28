@@ -1,0 +1,296 @@
+/* ESTILOS GENERALES */
+
+* {
+  box-sizing:border-box
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/* CABECERA */
+
+.contenedor-cabecera {
+  margin: 0 auto;
+  width: 72.4rem;
+}
+
+header {
+  position: relative;
+  box-shadow: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+  background-color: #fff;
+
+}
+.cabecera-top {
+  background: none repeat scroll 0 0 #373737;
+  display: block;
+  height: 3.6rem;
+  position: relative;
+  width: 100%;
+}
+
+/* PARTE IZQUIERDA */
+
+.cabecera-izq {
+  display: block;
+  height: 3.6rem;
+  margin-left: 1.2rem;
+  position: relative;
+  float: left;
+}
+.cabecera-izq ul {
+  margin: 0;
+  padding: 0;
+  height: 3.6rem;
+  list-style-type: none;
+  width: auto;
+  overflow: hidden;
+}
+.cabecera-izq ul li {
+  display: block;
+  float: left;
+  height: 3.6rem;
+  text-decoration: none;
+}
+.cabecera-izq ul li a {
+  display: block;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  margin-left: .1rem;
+  line-height: 3.6rem;
+}
+i.far.fa-envelope-open {
+  font-size: 1.5rem !important;
+  margin-top: .1rem !important;
+  padding-right: 1.1rem;
+  display: inline-table;
+}
+i.far.fa-comments {
+  font-size: 1.5rem !important;
+  margin-top: .1rem !important;
+  padding-right: 1.1rem;
+  display: inline-table;
+}
+
+/* PARTE DERECHA */
+
+header aside {
+  float: right;
+  display: block;
+}
+.cabecera-der {
+  height: 3.6rem;
+  line-height: 2.8rem;
+  margin: 0;
+  float: right;
+  clear: both;
+  list-style: none;
+  padding: 0;
+}
+.cabecera-der li {
+  height: 3.6rem;
+  margin-right: 1.4rem;
+  line-height: 3.8rem;
+  float: left;
+}
+.cabecera-der li a {
+  height: 3.6rem;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+i.fas.fa-users {
+  font-size: 1.5rem !important;
+  line-height: 0.1rem;
+  display: inline-table;
+  vertical-align: middle;
+  color: #fff;
+  margin: 0 1rem 0 0;
+}
+i.far.fa-handshake{
+  font-size: 1.5rem !important;
+  line-height: 0.5rem;
+  display: inline-table;
+  vertical-align: middle;
+  color: #fff;
+  margin: 0 1rem 0 0;
+}
+.clientes {
+  font-weight: bold;
+  background: #C0B283;
+  padding: 0 1.8rem;
+  margin: 0 !important;
+}
+.clientes a {
+  position: relative;
+}
+i.fa.fa-lock {
+  font-size: 1.2rem !important;
+  line-height: 0.1rem;
+  display: inline-table;
+  vertical-align: middle;
+  margin: 0 1rem 0 0;
+}
+
+/* NAVEGADOR */
+
+.nav {
+  display: block;
+  height: 4.5rem;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 1rem;
+  background-color: #fff;
+}
+.menu-completo {
+  display: block;
+  height: 4.5rem;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 1rem;
+  overflow: hidden;
+}
+.menu-completo li {
+  display: block;
+  float: left;
+  height: 4.5rem;
+  width: 16.2rem;
+  border-left: .1rem solid #fff;
+  border-right: .1rem solid #f4f4f4;
+  padding: 0;
+}
+a.cuentas {
+  display: block;
+  position: relative;
+  text-align: left;
+  margin-right: 4.5rem;
+  text-decoration: none;
+  margin-left: 4.2rem;
+  line-height: 3.8;
+  font-size: 19px;
+  color: #373737;
+}
+i.fas.fa-balance-scale {
+  font-size: 1.2rem !important;
+  line-height: 0.1rem;
+  display: inline-table;
+  vertical-align: middle;
+  margin: 0 1rem 0 0;
+}
+a.movimientos {
+  display: block;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  margin-right: 3rem;
+  margin-left: 3.5rem;
+  line-height: 3.8;
+  font-size: 19px;
+  color: #373737;
+}
+i.fas.fa-chart-line {
+  font-size: 1.2rem !important;
+  line-height: 0.1rem;
+  display: inline-table;
+  vertical-align: middle;
+  margin: 0 1rem 0 0;
+}
+li.largo {
+  width: 22rem;
+}
+a.prestamos {
+  display: block;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  font-size: 19px;
+  margin-right: 3rem;
+  margin-left: 3.5rem;
+  line-height: 3.8;
+  color: #373737;
+}
+i.fas.fa-home {
+  font-size: 1.2rem !important;
+  line-height: 0.1rem;
+  display: inline-table;
+  vertical-align: middle;
+  margin: 0 1rem 0 0;
+}
+li.calc {
+  width: 18rem;
+  border-right: none !important;
+}
+a.calculadora {
+  display: block;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  font-size: 19px;
+  margin-right: 3.5rem;
+  margin-left: 4.5rem;
+  line-height: 3.8;
+  color: #373737;
+}
+i.fas.fa-calculator {
+  font-size: 1.2rem !important;
+  line-height: 0.1rem;
+  display: inline-table;
+  vertical-align: middle;
+  margin: 0 1rem 0 0;
+}
+/* SLIDE DE IMAGENES */
+
+.contenedor-slide {
+  max-width: 72.4rem;
+  position: relative;
+  margin: auto;
+}
+img {
+  height: 620px;
+}
+.numImagen {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.siguiente, .anterior {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 20px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.siguiente {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.anterior:hover, .siguiente:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.titulo {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
