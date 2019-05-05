@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cuentas</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="contenedor-cabecera">
+    <header>
+      <div class="cabecera-top">
+        <div class="cabecera-izq">
+          <ul>
+            <li>
+              <a href="#"><i class='far fa-envelope-open'></i>Oficinas y Cajeros</a>
+            </li>
+            <li>
+              <a href="#"><i class="far fa-comments"></i>Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+        <aside>
+          <ul class="cabecera-der">
+            <li>
+              <a href="#"><i class="fas fa-users"></i>Hazte cliente</a>
+            </li>
+            <li>
+              <a href="#"><i class="far fa-handshake"></i>Conócenos</a>
+            </li>
+            <li class="clientes">
+              <a href="#"><i class="fa fa-lock"></i>Área Clientes</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <nav class="nav">
+        <ul class="menu-completo">
+          <li>
+            <a href="#" class="cuentas"><i class="fas fa-balance-scale"></i>Cuentas</a>
+          </li>
+          <li>
+            <a href="#" class="movimientos"><i class="fas fa-chart-line"></i>Movimientos</a>
+          </li>
+          <li class="largo">
+            <a href="#" class="prestamos"><i class="fas fa-home"></i>Hipotecas y Préstamos</a>
+          </li>
+          <li class="calc">
+            <a href="#" class="calculadora"><i class="fas fa-calculator"></i>Calculadora</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <section>
+    <div class="contenedor-pestanas">
+    <div class="pestanas">
+      <button class="pestanaBotones" onclick="MostrarCuenta(event, 'Arturo')" id="Abierto"><span>Cuenta Nómina Arturo</span></button>
+      <button class="pestanaBotones" onclick="MostrarCuenta(event, 'Joel')"><span>Cuenta Nómina Joel</span></button>
+      <button class="pestanaBotones" onclick="MostrarCuenta(event, 'Ahorros')"><span>Cuenta de Ahorros</span></button>
+    </div>
+    <div id="Arturo" class="contenidoPestanas">
+      <h3>Propietario</h3>
+      <p>Arturo Espadero Sánchez</p>
+      <h3>Nº de Cuenta</h3>
+      <p>ES4465 158226198165132100</p>
+      <h3>Saldo Total</h3>
+      <p>1753.69 <i class="fas fa-euro-sign"></i></p>
+    </div>
+    <div id="Joel" class="contenidoPestanas">
+      <h3>Propietario</h3>
+      <p>Joel Antonio Acebedo</p>
+      <h3>Nº de Cuenta</h3>
+      <p>ES4423 965854254753220574</p>
+      <h3>Saldo Total</h3>
+      <p>3269.71 <i class="fas fa-euro-sign"></i></p>
+    </div>
+    <div id="Ahorros" class="contenidoPestanas">
+      <h3>Propietario</h3>
+      <p>Joel Antonio Acebedo / Arturo Espadero Sánchez</p>
+      <h3>Nº de Cuenta</h3>
+      <p>ES4423 2135228753264174</p>
+      <h3>Saldo Total</h3>
+      <p>6441.88 <i class="fas fa-euro-sign"></i></p>
+    </div>
+    </div>
+  </section>
+
+  <!-- pie de página -->
+  <footer id="footer">
+    <div class="button-footer"></div>
+    <div class="container-footer">
+      <div class="footer-izq">
+        <ul>
+          <li>Av. La Palmera 108, Edificio B</li>
+          <li>Sevilla - 41928</li>
+          <li>España</li>
+          <li>954 31 42 40</li>
+        </ul>
+      </div>
+      <div class="footer-centro">
+        <p>Desarrollado por Arturo Espadero y Joel Antonio Acebedo</p>
+      </div>
+      <div class="footer-der">
+        <a class="social" href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="social" href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="social" href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- código javascript -->
+  <script>
+  function MostrarCuenta(evt, nombreCuenta) {
+    // Declaramos las variables
+    var x, contenidoPestana, pestanaBoton;
+
+    // llama a todos los elementos class="contenidoPestanas" y los esconde
+  contenidoPestana = document.getElementsByClassName("contenidoPestanas");
+  for (x = 0; x < contenidoPestana.length; x++) {
+    contenidoPestana[x].style.display = "none";
+  }
+
+  // llama a todos los elementos class="pestana-boton" y borra la clase "active"
+  pestanaBoton = document.getElementsByClassName("pestanaBotones");
+  for (x = 0; x < pestanaBoton.length; x++) {
+    pestanaBoton[x].className = pestanaBoton[x].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(nombreCuenta).style.display = "block";
+  evt.currentTarget.className += " active";
+  }
+  // Get the element with id="Abierto" and click on it
+  document.getElementById("Abierto").click();
+
+  </script>
+</body>
+</html>
