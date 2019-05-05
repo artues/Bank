@@ -2,14 +2,16 @@
    body {
         font-family: sans-serif;
       background:#23a8c6;
-
+       position: sticky;
    }
    .container {
-       width: 320px;
-       background-color: #307bd4;
-       margin: 120px auto;
+       width: 310px;
+       margin: 12px auto;
        padding: 10px ;
-       border-radius: 23px;
+       border-radius: 24px;
+       margin-top: -80px;
+
+
 
    }
    table {
@@ -22,14 +24,15 @@
 
    }
    td {
-       width: 30%;
+       width: 20%;
        border: 9px;
+}
 
-   }
+
    button {
-       width: 60px;
-       height: 70px;
-       font-size: 24px;
+       width: 50px;
+       height: 40px;
+       font-size: 30px;
        background-color: white;
        cursor: pointer;
        border-radius: 10px;
@@ -42,12 +45,11 @@ button:hover{
        font-size: 40px;
        vertical-align: bottom;
        text-align: right;
-       padding-right: 10px;
+       padding-right: 1px;
        background-color: #ececec;
        border-radius:12px;
-       height: 2em;
        box-shadow: 5px 5px 15px 3px #111;
        font-family: verdana sans-serif;
-
+       margin-left: -20px;
 
    }

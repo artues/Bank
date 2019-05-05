@@ -1,22 +1,22 @@
 function MiLista() {
-  var item = document.getElementById("añadir").value
+  var tarea = document.getElementById("añadir").value
   //añade un un nuevo elemto a la lista
-  var text = document.createTextNode(item)
+  var text = document.createTextNode(tarea)
   //crea el elemento en la lista
-  var nuevoItem = document.createElement("li")
+  var nuevoTarea = document.createElement("li")
   //crea el elemento en una lista ordenada
-  nuevoItem.appendChild(text)
+  nuevoTarea.appendChild(text)
   //lo agrega a la lista
-  document.getElementById("MiLista").appendChild(nuevoItem)
+  document.getElementById("MiLista").appendChild(nuevoTarea)
   //si no añadimos nada mostrara un mensaje
-  if (item === '') {
+  if (tarea === '') {
     alert("Tienes que añadir algo!");
   } else {
     document.getElementById("añadir").appendChild('');
   }
   //añadir.onclick = MiLista;
-eliminar.onclick = function() {
+eliminar.onclick = function(tarea) {
   lista.innerHTML = "";
-  nuevoItem.value = "";
+  nuevoTarea.value = "";
 }
 }

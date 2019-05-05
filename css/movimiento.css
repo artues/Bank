@@ -1,10 +1,9 @@
 body{
   margin: 0;
-  color: black;
-
+  background-color: burlywood;
 }
 input{
- background-image: url('imagen/buscador.png');
+ background-image: url('../img/buscador.png');
   background-position: -20px -12px;
  background-repeat: no-repeat;
  width: 50%;
@@ -13,11 +12,13 @@ input{
  border: 1px solid #ddd;
  margin-bottom: 12px;
 margin-left: 2%;
+  border-radius: 52px;
 }
 table{
   border: 1px solid #ddd;
-  margin-left: 1%;
+  margin-left: 20px;
   width: 96%;
+  background-color: cadetblue ;
 }
 th{
   border: 1px solid #ddd;
@@ -27,4 +28,13 @@ td{
 }
 h2{
   margin-left: 30%;
+  font-family: verdana sans-serif;
+  font-size: 50px;
+}
+th{
+  background-color: #ddd;
+}
+
+tr:hover{
+  background-color: azure;
 }
