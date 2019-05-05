@@ -1,26 +1,31 @@
+//**********SLIDE*************//
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Botones Siguiente-Anterior
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// Control de las imagenes
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("miSlide");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+
+  var i;   // Declara variable
+  var slides = document.getElementsByClassName("miSlide");  // Selecciona todos los elementos con la class name miSlide y lo mete en una variable
+  if (n > slides.length) {slideIndex = 1} // Si el parametro n es mayor que el numero de slides, poner el index a 1
+  if (n < 1) {slideIndex = slides.length}// Si el parametro n es menor que 1, poner el index al total de slides
+  for (i = 0; i < slides.length; i++) { //loop que muestra las slides como "none" (no las muestra).
       slides[i].style.display = "none";
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "block"; //muestra solo la slide que está definida en el index (-1 porque el array empieza en 0)
 }
+
+//**********DIALOGO MODAL*************//
 
 // Declara la Caja-modal
 var modal = document.getElementById('cajaModal');

@@ -54,15 +54,92 @@
     </header>
   </div>
   <section>
-    <div class="contenido-cuentas">
-      <div class="cabecera-cuentas">
-
-      </div>
+    <div class="contenedor-pestanas">
+    <div class="pestanas">
+      <button class="pestanaBotones" onclick="MostrarCuenta(event, 'Arturo')" id="Abierto"><span>Cuenta Nómina Arturo</span></button>
+      <button class="pestanaBotones" onclick="MostrarCuenta(event, 'Joel')"><span>Cuenta Nómina Joel</span></button>
+      <button class="pestanaBotones" onclick="MostrarCuenta(event, 'Ahorros')"><span>Cuenta de Ahorros</span></button>
+    </div>
+    <div id="Arturo" class="contenidoPestanas">
+      <h3>Propietario</h3>
+      <p>Arturo Espadero Sánchez</p>
+      <h3>Nº de Cuenta</h3>
+      <p>ES4465 158226198165132100</p>
+      <h3>Saldo Total</h3>
+      <p>1753.69 <i class="fas fa-euro-sign"></i></p>
+    </div>
+    <div id="Joel" class="contenidoPestanas">
+      <h3>Propietario</h3>
+      <p>Joel Antonio Acebedo</p>
+      <h3>Nº de Cuenta</h3>
+      <p>ES4423 965854254753220574</p>
+      <h3>Saldo Total</h3>
+      <p>3269.71 <i class="fas fa-euro-sign"></i></p>
+    </div>
+    <div id="Ahorros" class="contenidoPestanas">
+      <h3>Propietario</h3>
+      <p>Joel Antonio Acebedo / Arturo Espadero Sánchez</p>
+      <h3>Nº de Cuenta</h3>
+      <p>ES4423 2135228753264174</p>
+      <h3>Saldo Total</h3>
+      <p>6441.88 <i class="fas fa-euro-sign"></i></p>
+    </div>
     </div>
   </section>
 
-  <footer></footer>
-  <script type="text/javascript" src="js/codigo.js">
+  <!-- pie de página -->
+  <footer id="footer">
+    <div class="button-footer"></div>
+    <div class="container-footer">
+      <div class="footer-izq">
+        <ul>
+          <li>Av. La Palmera 108, Edificio B</li>
+          <li>Sevilla - 41928</li>
+          <li>España</li>
+          <li>954 31 42 40</li>
+        </ul>
+      </div>
+      <div class="footer-centro">
+        <p>Desarrollado por Arturo Espadero y Joel Antonio Acebedo</p>
+      </div>
+      <div class="footer-der">
+        <a class="social" href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="social" href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="social" href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- código javascript -->
+  <script>
+  function MostrarCuenta(evt, nombreCuenta) {
+    // Declaramos las variables
+    var x, contenidoPestana, pestanaBoton;
+
+    // llama a todos los elementos class="contenidoPestanas" y los esconde
+  contenidoPestana = document.getElementsByClassName("contenidoPestanas");
+  for (x = 0; x < contenidoPestana.length; x++) {
+    contenidoPestana[x].style.display = "none";
+  }
+
+  // llama a todos los elementos class="pestana-boton" y borra la clase "active"
+  pestanaBoton = document.getElementsByClassName("pestanaBotones");
+  for (x = 0; x < pestanaBoton.length; x++) {
+    pestanaBoton[x].className = pestanaBoton[x].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(nombreCuenta).style.display = "block";
+  evt.currentTarget.className += " active";
+  }
+  // Get the element with id="Abierto" and click on it
+  document.getElementById("Abierto").click();
 
   </script>
 </body>
